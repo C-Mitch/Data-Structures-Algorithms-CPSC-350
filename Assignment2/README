@@ -1,0 +1,31 @@
+Chase Mitchell
+#002274657
+Mitch213@mail.chapman.edu
+CPSC-350-01
+Assignment2
+
+Notes:
+My sincerest apologies for the procedurally generated spaghetti code that is this project; personally I blame the poor chlorine ventilation at SCIACS for 
+half of the design choices...such as making a boarder around the array for both Mirror and Doughnut Mode to check their neighbor conditions. In 
+retrospect, using modular division probably would have been more efficient/easier, but then we don't get those fancy boarders or 
+amazing (soul destroying) print statement debugging...so yeah...
+
+please forward all grievances to Coach Dennis Ploessel @ dploesse@chapman.edu 
+
+Bugs:
+	-The isStable() conditional checker (Assignment2Driver 155) works by comparing the total number of alive cells across a 1 generation gap
+	 (e.g. total alive Gen 3 == total alive Gen 5).  The logic behind this is if a board can't produce a new outcome with a gap of 1 generation,
+	 it must be flipping between it's previous and current outcomes perpetually, and thus is "stable".  However, since isStable() only check the 
+	 total number of alive cells between generations, it's possible it could false-positive a new, unique outcome should it happen to have the same 
+	 number of alive cells as the generation its being compared too (GenCurrent-2).  It's unlikely to happen, but could.
+	-Honestly I wasn't too sure how Mirror Mode Rules were enforced; my understanding lead me to believe only the four corners could have 3 reflection neighbors,
+	 while everything else could only have one; unlike dougnut mode, in which case EVERY cell would have 3 reflective neighbors.
+	-A lot of the input error checking heavily relies on the assumption people follow the right formatting they are told; needless to say, most still
+	 probably wont and I didn't have enough time to handle those exceptions.
+	-Many more things I can't even begin to imagine.
+	 
+References:
+https://stackoverflow.com/questions/158585/how-do-you-add-a-timed-delay-to-a-c-program
+http://www.cplusplus.com/reference/array/array/
+https://codereview.stackexchange.com/questions/47167/conways-game-of-life-in-c
+

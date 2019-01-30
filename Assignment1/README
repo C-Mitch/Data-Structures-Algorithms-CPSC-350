@@ -1,0 +1,17 @@
+Chase Mitchell
+#002274657
+Mitch213@mail.chapman.edu
+CPSC-350-01
+Assignment1
+
+References:
+	http://www.cplusplus.com/reference/fstream/ifstream/
+	http://www.cplusplus.com/reference/fstream/ofstream/
+	https://msdn.microsoft.com/en-us/library/6aw8xdf2.aspx
+	http://www.cplusplus.com/reference/string/string/?kw=string
+	http://www.cplusplus.com/forum/beginner/30730/
+
+Errors:
+	In function: void generateStatistics(std::string str), int the print statements outputting the statistics (sum, mean, etc.) used for checking;
+	if all 4 print statements are deleted/commented out, the statistics variables (sum, mean, etc.) will become messed up (outputting garbage variables)
+	and the simulation won't run/append to output file.

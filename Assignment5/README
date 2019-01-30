@@ -1,0 +1,19 @@
+Chase Mitchell
+#002274657
+Mitch213@mail.chapman.edu
+CPSC-350-01
+Assignment5
+
+References:
+	http://en.cppreference.com/w/cpp/language/operators
+	http://www.cplusplus.com/doc/tutorial/inheritance/
+	Josh Anderon - Help w/ Operator Overloading, Rollback, and File Serialization
+
+Notes:
+	Deserialization and Rollback were unable to be finished ontime; couldn't figure out a proper way of implementing them from my conceptual idea of how to.
+	
+Bugs:
+	-Serialization of Advisee Lists sometimes segfaults when transfering over to file.
+	-Rarley node deletions can fail to enforce referntial integrity and throw off both tree's syncronization, noted cases tend to involve deleteing
+	 faculty with multiple advisees  and transfering said advisee's to another faculty with existing advisees.
+	

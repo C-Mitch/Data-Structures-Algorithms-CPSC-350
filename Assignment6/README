@@ -1,0 +1,18 @@
+Chase Mitchell
+#002274657
+Mitch213@mail.chapman.edu
+CPSC-350-01
+Assignment6
+
+References:
+	https://stackoverflow.com/questions/30154501/c-pointer-deep-copy?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+	http://www.algolist.net/Algorithms/Sorting/Quicksort
+	https://www.geeksforgeeks.org/quick-sort/
+	https://www.geeksforgeeks.org/pancake-sorting/
+	http://www.cplusplus.com/reference/chrono/	
+	http://www.techiedelight.com/measure-elapsed-time-program-chrono-library/
+	
+Notes:
+	Chronos was used instead of ctime for timestamping purposes due to easier usability and conversion to microseconds for calculating duration of
+	sorting execution too a more accurate degree.
+	

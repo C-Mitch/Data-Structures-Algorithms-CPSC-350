@@ -1,0 +1,13 @@
+Chase Mitchell
+#002274657
+Mitch213@mail.chapman.edu
+CPSC-350-01
+Assignment3
+
+References:
+http://www.cplusplus.com/doc/oldtutorial/templates/
+https://stackoverflow.com/questions/495021/why-can-templates-only-be-implemented-in-the-header-file
+
+Bugs:
+	-Since Delimiter function readFile(std::string path) reads by character from selected file, commented delimiters or delimiter characters passed as parameters
+	('[' or '}') will be processed the same as normal delimiters, which can lead to false positives (this file can demonstrate this).

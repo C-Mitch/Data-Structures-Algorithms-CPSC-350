@@ -1,0 +1,18 @@
+Chase Mitchell
+#002274657
+Mitch213@mail.chapman.edu
+CPSC-350-01
+Assignment4
+
+References:
+	Joshua Anderson - Help with queue and DLL implementation.
+	https://www.uow.edu.au/~lukes/TEXTBOOK/notes-cpp/io/readtextfile.html
+	https://stackoverflow.com/questions/33047452/definitive-list-of-common-reasons-for-segmentation-faults
+
+Bugs:
+	A Bug in the Student class pertaining to getting/setting wait times for Student objects.  Function Student::setWaitTime(int tick) will correctly
+	set the accurate wait time for the given Student, but will either not store the calculated value or return the Student Constructor initialized value
+	(waitTime = 0) when Function Student::getWaitTime() is called.  This may be a sideeffect of the process by which the Student objects were created.
+	
+	DLL contains(T value) and remove(T key) required overridng the default == operator, which I didn't feel was necessary for this assignment
+	since niether functions were going to be used, so the portions of the functions that were causing this error were commented out for the time being.
